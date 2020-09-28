@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ScrollingActivity">
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Share"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@drawable/ic_menu_send"
+        app:showAsAction="never"
+        android:title="Rate Us" />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_menu_send"
+        app:showAsAction="never"
+        android:title="Settings" />
+</menu>

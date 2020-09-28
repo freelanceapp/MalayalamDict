@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.elamblakatt.dict_eng_malayalam.ocr.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rellative_bottom"
+        android:layout_height="match_parent">
+
+        <com.elamblakatt.dict_eng_malayalam.ocr.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.elamblakatt.dict_eng_malayalam.ocr.camera.CameraSourcePreview>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rellative_bottom">
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:text="Use the camera to get the text to search. Then tap on text to search that word."
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lighter_grey"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_focus"
+            android:id="@+id/auto_focus"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/whiteColor"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_flash"
+            android:textColor="@color/whiteColor"
+            android:id="@+id/use_flash"
+            android:layout_alignTop="@+id/auto_focus"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:checked="false" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+
+    <!-- Property List -->
+    <dimen name="title_textSize">55dp</dimen>
+
+</resources>

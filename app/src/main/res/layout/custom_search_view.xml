@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/rect_bg"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content" >
+<!--    <com.cjj.sva.JJSearchView-->
+<!--        android:id="@+id/jjsv"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="50dp"/>-->
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnSpeak"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:queryHint="English/ Malayalam Word"
+        android:searchIcon="@drawable/ic_search"
+        android:iconifiedByDefault="false"
+        >
+    </SearchView>
+
+
+    <ImageButton
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_photo_camera" />
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnImage"
+        android:layout_marginRight="12dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_mike" />
+
+
+</RelativeLayout>

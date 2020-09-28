@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elamblakatt.dict_eng_malayalam">
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:name=".RRApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HorizontalNtbActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            ></activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+           ></activity>
+        <activity
+            android:name=".MeaningDisplayActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+
+            ></activity>
+        <activity android:name=".notes.CreateNoteActivity"
+            android:theme="@style/AppThemeWhite"
+            android:screenOrientation="sensorPortrait"></activity>
+
+        <activity
+            android:name=".MeaningDisplayActivityInLan"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+
+            ></activity>
+        <activity android:name=".ocr.OcrCaptureActivity"
+            android:label="Read Text" />
+
+        <activity
+            android:name=".fragment.SeachHistoryListActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppThemeWhite"
+
+            ></activity>
+<!--        <service android:name=".Utils.AlarmService"-->
+<!--            />-->
+
+        <receiver android:name=".Utils.DailyAlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7668077121408373~9966898440"/>
+    </application>
+
+</manifest>

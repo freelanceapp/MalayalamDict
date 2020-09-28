@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rellayNoteRoot"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whiteColor"
+            app:titleTextColor="@color/counter_text_bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recylerview"
+      android:layout_above="@+id/adView"
+       android:layout_below="@+id/appBarLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_writenow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sel_color"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="@string/first_note"/>
+
+  <!--<android.support.design.widget.FloatingActionButton-->
+      <!--android:id="@+id/fab"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_alignParentBottom="true"-->
+      <!--android:layout_alignParentRight="true"-->
+      <!--android:layout_above="@+id/adView"-->
+      <!--android:layout_margin="15dp"-->
+      <!--app:backgroundTint="@color/primaryColor"-->
+      <!--app:src="@drawable/ic_add_pray" />-->
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_margin="16dp"
+      android:clickable="true"
+      android:visibility="visible"
+      android:src="@drawable/ic_pencil"
+     android:layout_above="@+id/adView"
+      android:layout_alignParentRight="true"
+      />
+
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/adView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+
+      ads:adSize="SMART_BANNER"
+      ads:adUnitId="@string/banner_ad_unit_id1">
+  </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

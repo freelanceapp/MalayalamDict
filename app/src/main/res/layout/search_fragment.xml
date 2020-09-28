@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rellaySearchRoot"
+        android:layout_width="match_parent"
+        android:background="@color/whiteColor"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/searchvw"
+            layout="@layout/custom_search_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></include>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/rellaySearchRoot"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id1">
+    </com.google.android.gms.ads.AdView>
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/adView1"
+        android:layout_alignParentBottom="true"
+        android:divider="@color/light_grey"
+        android:scrollbars="none"
+        android:id="@+id/lvSearchResults"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellay_empty"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/txtvw_empty"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

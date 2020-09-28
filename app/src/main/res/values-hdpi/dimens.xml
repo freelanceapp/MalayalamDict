@@ -1,0 +1,7 @@
+<resources>
+
+
+    <dimen name="title_textSize">40dp</dimen>
+    <dimen name="home">40dp</dimen>
+   
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HorizontalNtbActivity">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph='@navigation/nav_graph'
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--    <android.support.design.widget.BottomNavigationView-->
+<!--            android:id="@+id/bottomBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            app:backgroundColor="@color/colorPrimary"-->
+<!--            app:textColor="@color/whiteColor"-->
+<!--            app:textSize="12sp"-->
+<!--            app:iconSize="24dp"-->
+<!--            app:indicatorColor="#2DFFFFFF"-->
+<!--            app:indicatorRadius="10dp"-->
+<!--            app:sideMargins="8dp"-->
+<!--            app:itemPadding="8dp"-->
+<!--            app:iconTint="#C8FFFFFF"-->
+<!--            app:iconTintActive="#FFFFFF"-->
+<!--            app:menu="@menu/menu_bottom"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:background="#EEEEEE"-->
+<!--   android:orientation="vertical">-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/vp_horizontal_ntb"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"/>-->
+
+<!--&lt;!&ndash;    <devlight.io.library.ntb.NavigationTabBar&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/ntb_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_badge_gravity="top"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_badge_position="right"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_badged="false"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_scaled="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_tinted="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_title_mode="all"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_inactive_color="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_titled="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:ntb_swiped="true"/>&ndash;&gt;-->
+
+<!--    <me.ibrahimsn.lib.SmoothBottomBar-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        app:backgroundColor="@color/colorPrimary"-->
+<!--        app:menu="@menu/menu_bottom"/>-->
+
+<!--</LinearLayout>-->

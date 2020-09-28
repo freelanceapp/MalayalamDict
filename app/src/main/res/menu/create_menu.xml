@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_voice"
+        android:orderInCategory="100"
+        android:title="Voice"
+        android:icon="@drawable/ic_mike"
+        myapp:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="SAVE"
+        android:icon="@drawable/ic_save_note"
+        myapp:showAsAction="always"/>
+
+
+</menu>

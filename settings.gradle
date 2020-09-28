@@ -1,0 +1,7 @@
+include ':app', ':library',':navigationtabbar'
+include ':datetime'
+
+
+def path='../datetimepicker-library/app'
+//print("path 1="+path)
+project(':datetime').projectDir = new File(path)

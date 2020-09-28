@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primaryColor">#009688</color>
+    <color name="primaryColorDark">#009688</color>
+    <color name="accentColor">#009688</color>
+    <color name="semiTransparentPrimaryColor">#7FEB8336</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackColor">#000000</color>
+    <color name="bg_testament">#F3F3F3</color>
+    <color name="light_grey">#3C3F41</color>
+    <color name="lighter_grey">#C8C8C8</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="sel_color">#6D616F</color>
+    <color name="grey_light">#E6E6E6</color>
+    <color name="drawer_line">#ee222222</color>
+    <color name="text_gray">#2d2d2d</color>
+
+    <color name="color1">#E27426</color>
+    <color name="color2">#801515</color>
+    <color name="color3">#BC104A</color>
+    <color name="color4">#DB4437</color>
+    <color name="color5">#005C82</color>
+    <color name="color6">#000000</color>
+    <color name="color7">#0091EA</color>
+    <color name="color8">#CB4025</color>
+    <color name="color9">#009688</color>
+</resources>

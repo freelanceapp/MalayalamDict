@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="22dp"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingStart="22dp"
+    android:gravity="center"
+    android:paddingTop="22dp">
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:progressBackgroundTint="#DBDBD9"
+        android:progressTint="@color/colorPrimary"
+       android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvwMessage"
+         android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"/>
+
+    <View
+        android:id="@+id/vw_separator"
+        android:layout_width="match_parent"
+
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/rellay_subview"
+        android:background="#DBDBD9"
+
+        ></View>
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/rellay_bottombtn"
+        >
+        <TextView
+            android:id="@+id/txtvw_resendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:textColor="#626065"
+            android:textStyle="bold"
+            android:text="EXIT"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtvw_resendCode"
+            android:layout_margin="8dp"
+            android:textColor="#626065"
+            android:textStyle="bold"
+            android:text="CANCEL"/>
+
+    </RelativeLayout>-->
+
+
+    <!-- <TextView
+         android:id="@+id/txt_title"
+         style="@style/TitleText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:text="@string/title_promo_code"
+         android:textSize="16sp" />-->
+
+
+
+</LinearLayout>

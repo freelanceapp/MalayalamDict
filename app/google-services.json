@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833275022516",
+    "firebase_url": "https://dictionary-a0a8c.firebaseio.com",
+    "project_id": "dictionary-a0a8c",
+    "storage_bucket": "dictionary-a0a8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833275022516:android:25a8df6456e8447b875be1",
+        "android_client_info": {
+          "package_name": "com.elamblakatt.dict_eng_malayalam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833275022516-n10adgqbvm5tvqtd8thqgrhq5ece6ul8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnaPYExbEK82bhuvhcV_HgsC1Cusphl68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833275022516-n10adgqbvm5tvqtd8thqgrhq5ece6ul8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

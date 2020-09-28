@@ -1,0 +1,60 @@
+<resources>
+
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/primaryColorDark</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="colorControlNormal">@android:color/white</item>
+
+    </style>
+    <style name="AppThemeWhite" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/whiteColor</item>
+        <item name="colorPrimaryDark">@color/whiteColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- <item name="android:background">@color/primaryColor</item>-->
+        <item name="android:textColor">@color/blackColor</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionModeBackground">@color/light_grey</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+    <!-- CheckBox Attribute -->
+    <declare-styleable name="MerialCheckBox">
+        <attr name="checkbox_color" format="color" />
+        <attr name="checkbox_checked_color" format="color" />
+    </declare-styleable>
+
+
+</resources>
